@@ -12,8 +12,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = (TextView)findViewById(R.id.text);
 //        textView.setText("Hello New World!!!!");
-        int a = 1+1;
-        String s = String.valueOf(a);
+        String s = calc(100);
+        s += calc(1000);
+        s += calc(10000);
+
+        //String s = String.valueOf(a);
         textView.setText(s);
+    }
+
+    private String calc(int n){
+        int a = 0;
+        for(int i=1; i<=n; i++){
+            a += i;
+        }
+        String s = "1부터 " + String.valueOf(n) + "을 더한 값은 " + String.valueOf(a) + "\n";
+        return s;
     }
 }
