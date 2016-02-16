@@ -27,7 +27,7 @@ public class ChatActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mInputMessage = (EditText) findViewById(R.id.input_message);
-        mInputMessage.setText("hoge");
+        mInputMessage.setText("hoge ");
     }
 
     @Override
